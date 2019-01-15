@@ -11,27 +11,50 @@
             padding: 0;
             font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;   
         }
-
-        div.tm-catalog-item-details {
-            transition: box-shadow 0.3s ease-in-out;
-            width: 225px;
-            margin: 1em auto;
-            background-color:  #3D3D3D;  
+        
+         div {
+            height: 74px;
+            background-color: #3D3D3D;
+           }
+        
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
         }
         
-       div.tm-catalog-item-details:hover {
-            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        .flex-container > div:first-child {
+            display: flex;
+            align-items: center;
+        }
+        
+        .flex-container > div:last-child {
+            width: 400px;
+            align-items: center;
+            display: flex;
         }
     </style>    
 </head>
 <body>
-   <form class="pure-form" method="get" action="/search">
-                        <input class="tm-search-input pure-input" name="q" value="" type="text" placeholder="Traži">
-                    </form>
-
+    
+    <div class="flex-container">
+        <div>
+            <img src="./static/images/dsBuffer.jpg" height="74" width="74" class="pure-img" alt="icon"/>
+            <h1 style="margin: 0; color: white;" height="74" width="74" > Hearts Desire Beauty </h1>
+        </div>
+        <div>
+            <form class="pure-form" method="get" action="/search">
+                <input class="tm-search-input pure-input" name="q" value="" type="text" placeholder="Traži"/>
+            </form>
+        </div>
+    </div> 
+     
+                    
 </body>
     
 </html>
         
-        
+
+	                        
+                       	
    

@@ -6,52 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type="text/css">
         body {
-            background-color:  #F50057;
             margin: 0;
             padding: 0;
-            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;   
+            font-family: Gabriola;  
+            background-color:  #F84A87;
         }
         
          div {
             height: 82px;
-            background-color: #3D3D3D;
            }
         
         .flex-container {
             display: flex;
             align-items: center;
             justify-content: space-between; 
+            background-color: rgb(61,61,61);
+           
         }
         
-        .flex-container > div:first-child {
+        .flex-container > div{
             display: flex;
             align-items: center;
         }
-        
-        .flex-container > div:last-child {
-            align-items: center;
-            display: flex;
-        }
-        
+         
         .flex-container > div:last-child > form > input {
             width: 434px;
             margin-right: 166px;
+        }
+        
+        .flex-container > div:first-child > h1 {
+            font-weight: lighter;
         }
     </style>    
 </head>
 <body>
     
-    <div class="flex-container">
+    <header class="flex-container">
         <div>
             <img src="./static/images/dsBuffer.jpg" height="65.5" width="82" class="pure-img" alt="icon"/>
-            <h1 style="margin: 0; color: white;" height="82" width="82" >Hearts Desire Beauty</h1>
+            <h1 style="margin: 0; font-size: 42px; color: #F84A87;" height="82" width="82" >Hearts</h1>
+            <h1 style="margin: 0; font-size: 42px; color: white;" height="82" width="82" >Desire </h1>
+            <h1 style="margin: 0; font-size: 42px; color: #F84A87;" height="82" width="82" >Beauty</h1>
         </div>
         <div>
             <form class="pure-form" method="get" action="/search">
-                <input class="tm-search-input pure-input" name="q" value="" type="text" placeholder="Traži"/>
+                <input class="tm-search-input pure-input" name="q" value="" type="text" placeholder="Search"/>
             </form>
         </div>
-    </div> 
+    </header> 
      
                     
 </body>

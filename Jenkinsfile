@@ -2,7 +2,7 @@ pipeline {
 	agent any
 	stages {
 		stage('build') {
-			steps { sh 'ruby --version' }
+			steps { sh 'docker --version' }
 		}
 	}
 }
